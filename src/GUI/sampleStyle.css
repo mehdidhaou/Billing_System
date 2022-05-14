@@ -1,0 +1,64 @@
+.button
+{
+   -fx-background-color:  #05071f;
+}
+.button:hover{
+    -fx-background-color: #10165F;
+}
+.button:pressed{
+    -fx-background-color: #1620A1;
+}
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:  #0e1125;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.txt{
+    -fx-background-color:  #02030A;
+    -fx-border-color: #919191;
+    -fx-background-radius: 5em;
+    -fx-border-radius: 5em;
+    -fx-padding: 2;
+    -fx-text-alignment: center;
+}
+
+.btnWin{
+    -fx-background-color:  #02030A;
+    -fx-border-color: #919191;
+    -fx-background-radius: 5em;
+    -fx-border-radius: 5em;
+}
+.btnWin:hover{
+    -fx-background-color: #10165F;
+}
+.btnWin:pressed{
+    -fx-background-color: #1620A1;
+}
+.pane{
+    -fx-background-color: #02030A;
+}

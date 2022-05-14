@@ -1,0 +1,239 @@
+.switchButton
+{
+   -fx-background-color:  #05071f;
+}
+.switchButton:hover{
+    -fx-background-color: #10165F;
+}
+.switchButton:pressed{
+    -fx-background-color: #1620A1;
+}
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:  #0e1125;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.txt{
+    -fx-background-color:  #02030A;
+    -fx-border-color: #919191;
+    -fx-background-radius: 5em;
+    -fx-border-radius: 5em;
+    -fx-padding: 2;
+    -fx-text-alignment: center;
+}
+
+.btnWin{
+    -fx-background-color:  #02030A;
+    -fx-border-color: #919191;
+    -fx-background-radius: 5em;
+    -fx-border-radius: 5em;
+}
+.btnWin:hover{
+    -fx-background-color: #10165F;
+}
+.btnWin:pressed{
+    -fx-background-color: #1620A1;
+}
+.pane{
+    -fx-background-color: #1d2530;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lightButton{
+    -fx-font: 16px "System";
+    -fx-padding: 8;
+    -fx-background-color: #46d9f3;
+    -fx-background-color: linear-gradient(from 0% 25% to 100% 100%, #4f4feb, #82dcdc);
+    -fx-background-radius:10;
+    -fx-border-color:transparent;
+}
+
+.lightButton:hover{
+  -fx-background-color: linear-gradient(from 30% 25% to 100% 100%, #4f4feb, #82dcdc);
+}
+
+.darkButton{
+    -fx-font: 16px "System";
+    -fx-padding: 8;
+    -fx-background-color: #46d9f3;
+    -fx-background-color: linear-gradient(from 0% 25% to 100% 100%, #035bac, #67c4e3);
+    -fx-background-radius:50;
+    -fx-border-color:transparent;
+}
+
+.darkButton:hover{
+  -fx-background-color: linear-gradient(from 30% 25% to 100% 100%, #035bac, #67c4e3);
+}
+
+.setButton{
+      -fx-font: 22px "Berlin Sans FB";
+      -fx-padding: 8;
+      -fx-background-color: #46d9f3;
+      -fx-background-color: linear-gradient(from 0% 25% to 100% 100%, #428de3, #41e8ad);
+      -fx-background-radius:5;
+      -fx-border-color:transparent;
+}
+
+.setButton:hover{
+  -fx-background-color: linear-gradient(from 50% 80% to 100% 100%, #428de3, #41e8ad);
+}
+
+.
+
+.textField{
+	-fx-text-box-border: #82dcdc; 
+ 	-fx-padding: 8;
+	-fx-background-radius:15;
+}
+
+.textField2{
+	-fx-text-box-border: #82dcdc; 
+ 	-fx-padding: 8;
+	-fx-background-radius:8;
+}
+
+
+.closeButton{
+    -fx-background-radius:5;
+    -fx-background-color: #f04f4f;
+}
+
+.linkButtonSignup{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em;
+    -fx-text-fill: #828282;
+}
+
+.linkButtonSignup:hover{
+    -fx-border-color: transparent, black;
+    -fx-border-width: 0.2, 0.2;
+    -fx-border-style: solid, segments(1, 1);
+
+}
+.linkButtonSignup:pressed{
+    -fx-background-color: #1d253e;
+}
+
+
+
+.linkButtonLogin{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em;
+    -fx-text-fill: #828282;
+}
+.linkButtonLogin:hover{
+    -fx-border-color: transparent, black;
+    -fx-border-width: 0.2, 0.2;
+    -fx-border-style: solid, segments(1, 1);
+
+}
+.linkButtonLogin:pressed{
+    -fx-background-color: #f1ffff;
+}
+
+.homeBackground{
+    -fx-background-color: f4f4f4;
+}
+
+.closeButton:hover{
+    -fx-background-color: #c73535;
+}
+
+.welcomeLabel{
+    -fx-text-alignment:center;
+}
+
+.stegButton{
+      -fx-font: 22px "Berlin Sans FB";
+      -fx-padding: 2;
+      -fx-background-color: #a9ff68;
+      -fx-background-radius:25;
+      -fx-border-color:transparent;
+}
+
+.topnetButton{
+      -fx-font: 22px "Berlin Sans FB";
+      -fx-padding: 2;
+      -fx-background-color: #ff3d43;
+      -fx-background-radius:25;
+      -fx-border-color:transparent;
+}
+
+.sonedeButton{
+      -fx-font: 22px "Berlin Sans FB";
+      -fx-padding: 2;
+      -fx-background-color: #ff638a;
+      -fx-background-radius:25;
+      -fx-border-color:transparent;
+}
+
+.stegButton:hover{
+    -fx-padding: 3;
+    -fx-background-radius:15;
+}
+
+.topnetButton:hover{
+    -fx-padding: 3;
+    -fx-background-radius:15;
+}
+
+.sonedeButton:hover{
+    -fx-padding: 3;
+    -fx-background-radius:15;
+}
+
+.sycnhronizeButton{
+     -fx-background-color: #1d2530;
+     -fx-background-radius:25;
+}
+
+.sycnhronizeButton:hover{
+     -fx-background-color: #1a2028;
+}
+
+

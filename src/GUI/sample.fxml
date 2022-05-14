@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="964.0" prefWidth="1600.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="-14.0" prefHeight="979.0" prefWidth="371.0" style="-fx-background-color: #05071f;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-14.0">
+         <children>
+            <ImageView fitHeight="128.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="100.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Image/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcome_label111" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="150.0" styleClass="welcomeText" text="Clever Bill" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.48095238095238096" startY="0.6238095238095238">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.25882354378700256" green="0.5529412031173706" blue="0.8901960849761963" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.2549019753932953" green="0.9098039269447327" blue="0.6784313917160034" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <padding>
+                  <Insets bottom="120.0" />
+               </padding>
+            </Label>
+            <Button fx:id="btnHome" graphicTextGap="20.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="75.0" prefWidth="371.0" styleClass="switchButton" stylesheets="@style.css" text="Home" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets left="70.0" />
+               </opaqueInsets></Button>
+            <Button fx:id="btnMyInfo" graphicTextGap="20.0" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="80.0" prefWidth="412.0" styleClass="switchButton" stylesheets="@style.css" text="My info" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets left="70.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnGenerate" graphicTextGap="20.0" layoutX="10.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="89.0" prefWidth="412.0" styleClass="switchButton" stylesheets="@style.css" text="Generate" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets left="70.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnMyStats" graphicTextGap="20.0" layoutX="10.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="96.0" prefWidth="412.0" styleClass="switchButton" stylesheets="@style.css" text="My Stats" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets left="70.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnNotifications" graphicTextGap="20.0" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="95.0" prefWidth="412.0" styleClass="switchButton" stylesheets="@style.css" text="Notifications" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets left="70.0" />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnSignOut" graphicTextGap="20.0" layoutX="10.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="87.0" prefWidth="371.0" styleClass="switchButton" stylesheets="@style.css" text="Sign Out" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets left="70.0" />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="373.0" layoutY="2.0" prefHeight="964.0" prefWidth="1229.0">
+         <children>
+            <Pane fx:id="MyInfoPane" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="myinfo_label" alignment="CENTER" contentDisplay="CENTER" layoutX="429.0" layoutY="115.0" prefHeight="78.0" prefWidth="370.0" styleClass="welcomeText" text="My Info" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.48095238095238096" startY="0.6238095238095238">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.25882354378700256" green="0.5529412031173706" blue="0.8901960849761963" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.2549019753932953" green="0.9098039269447327" blue="0.6784313917160034" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="first_label" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="299.0" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email_label" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="393.0" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="national_label" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="496.0" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date_label" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="587.0" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="SignOutPane" prefHeight="200.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css" />
+            <Pane fx:id="NotificationsPane" prefHeight="938.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css" />
+            <Pane fx:id="MyStatsPane" onDragDetected="#statGenerateButtonOnAction" prefHeight="964.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="myinfo_label1" alignment="CENTER" contentDisplay="CENTER" layoutX="430.0" layoutY="114.0" prefHeight="78.0" prefWidth="370.0" styleClass="welcomeText" text="My Stats" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.48095238095238096" startY="0.6238095238095238">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.25882354378700256" green="0.5529412031173706" blue="0.8901960849761963" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.2549019753932953" green="0.9098039269447327" blue="0.6784313917160034" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <LineChart fx:id="chart" layoutX="79.0" layoutY="203.0" prefHeight="663.0" prefWidth="1024.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <Button fx:id="show_button" layoutX="404.0" layoutY="866.0" mnemonicParsing="false" onAction="#statGenerateButtonOnAction" opacity="0.7" prefHeight="54.0" prefWidth="374.0" styleClass="setButton" text="Show Consumption Rate" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="GeneratePane" prefHeight="964.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <GridPane layoutX="194.0" layoutY="76.0" prefHeight="812.0" prefWidth="868.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="313.0" minHeight="0.0" prefHeight="265.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="527.0" minHeight="10.0" prefHeight="111.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="527.0" minHeight="0.0" prefHeight="113.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="527.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="527.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/stegLogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="120.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Image/sonedeLogo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="120.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Image/topnetLogo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="steg_button" mnemonicParsing="false" onAction="#stegGenerateButtonOnAction" opacity="0.8" prefHeight="56.0" prefWidth="138.0" styleClass="stegButton" text="STEG" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="sonede_button" mnemonicParsing="false" onAction="#sonedeGenerateButtonOnAction" opacity="0.8" prefHeight="54.0" prefWidth="137.0" styleClass="sonedeButton" text="SONEDE" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="topnet_button" mnemonicParsing="false" onAction="#topnetGenerateButtonOnAction" opacity="0.8" prefHeight="54.0" prefWidth="137.0" styleClass="topnetButton" text="TOPNET" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="steg1" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="steg2" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="steg3" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="steg4" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sonede1" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sonede2" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sonede3" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sonede4" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topnet1" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topnet2" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topnet3" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topnet4" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="499.0" styleClass="welcomeText" textFill="#e8eeed" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Segoe UI Light" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children></Pane>
+            <Pane fx:id="HomePane" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="356.0" fitWidth="300.0" layoutX="465.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/cleverlogo.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
