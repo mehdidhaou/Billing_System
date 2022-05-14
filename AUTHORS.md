@@ -4,7 +4,7 @@ For the purpose of tracking copyright, this is the list of individuals and organ
 
 ## ORGANIZATIONS\- SMU (South Mediterranean University)
 
-## <https://www.smu.tn>\
+## <https://www.smu.tn>
 
 #### INITIAL AUTHORS:
 
@@ -12,4 +12,4 @@ For the purpose of tracking copyright, this is the list of individuals and organ
 
 #### - Mehdi Dhaou <mehdi.dhaou@medtech.com>
 
-#### \## CONTRIBUTORS (sorted alphabetically)
+
