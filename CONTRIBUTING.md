@@ -4,11 +4,11 @@
 
 Before sending your pull requests, make sure you do the following:
 
-- Read the [contributing guidelines](https://github.com/mehdidhaou/Billing_System/CONTRIBUTING.md).
-- Read the [Code of Conduct](https://github.com/mehdidhaou/Billing_System/CODE_OF_CONDUCT.md).
+- Read the [contributing guidelines](https://github.com/mehdidhaou/Billing_System/blob/master/CONTRIBUTING.md).
+- Read the [Code of Conduct](https://github.com/mehdidhaou/Billing_System/blob/master/CODE_OF_CONDUCT.md).
 - Ensure you have signed the Contributor License Agreement (CLA).
-- Check if your changes are consistent with the [guidelines](https://github.com/mehdidhaou/Billing_System/CONTRIBUTING.md#general-guidelines-and-philosophy-for-contribution).
-- Changes are consistent with the [Coding Style](https://github.com/mehdidhaou/Billing_System/CONTRIBUTING.md#c-coding-style).
+- Check if your changes are consistent with the [guidelines](https://github.com/mehdidhaou/Billing_System/blob/master/CONTRIBUTING.md#general-guidelines-and-philosophy-for-contribution).
+- Changes are consistent with the [Coding Style](https://github.com/mehdidhaou/Billing_System/blob/master/CONTRIBUTING.md#c-coding-style).
 
 ## How to become a contributor and submit your own code
 
