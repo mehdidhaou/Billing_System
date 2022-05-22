@@ -8,8 +8,6 @@ For the purpose of tracking copyright, this is the list of individuals and organ
 
 #### INITIAL AUTHORS:
 
-#### - Amine Ben Hassouna <amine.benhassouna@gmail.com>
-
 #### - Mehdi Dhaou <mehdi.dhaou@medtech.com>
 
 
